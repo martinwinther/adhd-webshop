@@ -12,7 +12,9 @@
     "@tailwindcss/postcss": "^4.1.11",
     "next": "15.4.4",
     "react": "19.1.0",
-    "react-dom": "19.1.0"
+    "react-dom": "19.1.0",
+    "@apollo/client": "^3.8.0",
+    "graphql": "^16.8.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
@@ -28,6 +30,9 @@
     "postcss": "^8.5.6",
     "prettier": "^3.6.2",
     "tailwindcss": "^4.1.11",
-    "typescript": "^5"
+    "typescript": "^5",
+    "@graphql-codegen/cli": "^5.0.0",
+    "@graphql-codegen/typescript": "^4.0.0",
+    "@graphql-codegen/typescript-operations": "^4.0.0"
   }
 }
