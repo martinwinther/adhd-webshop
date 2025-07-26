@@ -11,14 +11,22 @@ export const Card = React.forwardRef<HTMLDivElement, CardProps>(
     <div
       ref={ref}
       className={cn(
-        'bg-white rounded-md shadow-sm border border-neutral-200 transition-shadow hover:shadow-md p-4 sm:p-6 flex flex-col',
+        'bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-neutral-100/50 backdrop-blur-sm',
         className
       )}
       {...props}
     >
-      {header && <div className="mb-2 font-semibold text-lg">{header}</div>}
+      {header && (
+        <div className="px-6 py-4 border-b border-neutral-100">
+          <div className="font-semibold text-lg text-neutral-900">{header}</div>
+        </div>
+      )}
       <div className="flex-1">{children}</div>
-      {footer && <div className="mt-4">{footer}</div>}
+      {footer && (
+        <div className="px-6 py-4 border-t border-neutral-100 bg-neutral-50/50">
+          {footer}
+        </div>
+      )}
     </div>
   )
 );
